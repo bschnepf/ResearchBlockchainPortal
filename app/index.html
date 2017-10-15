@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <img src="../public/logo.jpg" class="img-thumbnail" width=20%" hight="20%">
+  Research Blockchain Portal Inc.
+  <div class="container">
+    <br><br>
+    <button id="login" onclick="App.login()">Login with Uport</button><br>
+    <br><hr>
+    <title>Research Marketplace - Researcher Frontend</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="./app.js"></script>
+  </div>
+</head>
+<body>
+<h2>Reasearcher Add Work</h2>
+<h5>Dapp based on Webpack</h5>
+<!--<h4>You have already some Paper<span class="black"><span id="balance"></span> ADDED</span></h4>-->
+<h5>Add one ID from your article or book</h5>
+<div class="row">
+  <label for="docID"> DOI:</label><input type="text" id="docID"></input>
+
+  <!--  <label for="receiver">Researcher Identifier:</label><input type="text" id="receiver"></input>-->
+</div>
+<br><br><button id="send" onclick="App.addToAccount()">Add Paper ID</button>
+<br><br>
+<br><br><button id="list" onclick="App.listIDs()">List Paper IDs</button>
+<br><br>
+
+<span id="status"></span>
+<br>
+<small>Copyright: Research Blockchain Portal Inc.</small>
+</body>
+</html>
